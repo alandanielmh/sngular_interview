@@ -4,7 +4,6 @@ export const getFibonacci = (num) => {
 
     const dp = (x) => {
         if (x <= 1) return x;
-
         if (!map.has(x)) {
             map.set(x, dp(x - 1) + dp(x - 2))
         }
