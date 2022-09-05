@@ -39,7 +39,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project 🤔
 
-This project is a Sngular Interview that runs the function above and return the result, everything in different components
+This project is a Sngular Interview that runs the function below and return the result, everything in different components
 
  <img src="src/Images/Function.png" width="800" height="80">
 
