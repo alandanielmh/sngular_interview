@@ -11,7 +11,7 @@ export const  Result = ({num}) => {
                 alignItems="center"
                 justifyContent="center"
             >
-                <h1>El resultado es: { num }</h1>
+                <h1>{`El resultado es: ${ num }`}</h1>
             </Grid>
         </>
   )

@@ -6,7 +6,6 @@ export const useUpdate = () => {
 
     const calculate = (num) => {
         setInputNumber(serie(num))
-        debugger
     }
     
     return {
