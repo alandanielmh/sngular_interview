@@ -1,15 +1,17 @@
 import { serie } from "../src/helpers/functions"
+// import {screen , fireEvent, render} from '@testing-library/react'
+// import { UseUpdate } from "../src/hooks/UseUpdate"
 
 describe('Unitest From 0 to 9 of the function ', () => { 
 
     test('should work with 0', () => { 
 
-        
         const inputvalue = 0
         //fireEvent.click( screen.getByText('Calcula Fórmula'), {target: {value: inputvalue}})
         const result = serie(inputvalue)
         expect(typeof result).toBe('number')
         expect(result).toBe(0)
+
      })
 
      test('should work with 1', () => { 

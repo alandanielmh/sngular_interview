@@ -15,8 +15,8 @@ export const UseUpdate = () => {
     return (
         <>
             <TextField  onChange={(e) => { setInputNumber(e.target.value) }} value={inputNumber} label="Insertar un Número (n)" variant="filled" />
-            <Button onClick={calcular} variant="contained">Calcula Fórmula</Button>
-            <h1 data-testid="resp-waited">{outputNumber}</h1>
+            <Button role="boton" onClick={calcular} variant="contained">Calcula Fórmula</Button>
+            <h1 data-testid="resp-waited">El resultado es: {outputNumber}</h1>
         </>
       );
 }

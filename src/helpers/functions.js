@@ -32,11 +32,9 @@ export const getTriangular  = (num) => {
 
 
 export const serie = (numero) => {
-    //let k = num
-    //debugger
+
     const primo = 2*(getPrimo(numero-2));
     const triangular = 3*(getTriangular(numero-2));
     const fibonacci = 7*(getFibonacci(numero-1));
     return  Math.abs(primo * triangular * fibonacci);
-    //debugger
 }
