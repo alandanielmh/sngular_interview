@@ -1,18 +1,18 @@
-import { useState } from "react"
+import { useState } from "react";
 import { serie } from "../helpers/functions";
 
 export const useUpdate = () => {
-    const [inputNumber , setInputNumber] = useState('');
+  const [number, setNumber] = useState("");
+  const [result, setResult] = useState("");
 
-    const calculate = (num) => {
-        setInputNumber(serie(num))
-    }
-    
-    return {
-        inputNumber,
-        calculate
-    }
-}
+  const calculate = () => {
+    setResult(serie(number));
+  };
 
-
-
+  return {
+    calculate,
+    number,
+    result,
+    setNumber,
+  };
+};

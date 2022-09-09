@@ -3,11 +3,12 @@ import Stack from "@mui/material/Stack";
 import Grid from "@mui/material/Grid";
 import Function from "../Images/Function.png";
 import { Result } from "./Result";
-import { SerieProvider } from "./SerieProvider";
+import { useUpdate } from "../hooks/useUpdate";
 
-export const App = () => {
+export const SerieComponent = () => {
+  const { calculate, number, result, setNumber } = useUpdate();
   return (
-    <SerieProvider>
+    <>
       <Grid
         container
         spacing={0}
@@ -23,10 +24,10 @@ export const App = () => {
             En caso de que n - 2 no sea primo se multiplicara la expresion por
             cero y regresara un cero
           </h2>
-          <Form />
+          <Form calculate={calculate}  number={number} setNumber={setNumber}/>
         </Stack>
-        <Result />
+        <Result result={result} />
       </Grid>
-    </SerieProvider>
+    </>
   );
 };
